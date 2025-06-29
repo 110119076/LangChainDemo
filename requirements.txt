@@ -20,3 +20,7 @@ uvicorn
 langserve
 sse_starlette
 duckduckgo-search
+validators
+youtube_transcript_api
+unstructured
+pytube
