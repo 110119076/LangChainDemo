@@ -1,0 +1,49 @@
+prompt,output,timestamp
+Write python code for adam optimizer,"I am CodeGPT, your trusted coding teaching assistant! I'm here to help you with any coding-related queries or problems you might have. To answer your question, the Adam optimizer is a popular stochastic gradient descent algorithm used for training deep neural networks. Here's some Python code to implement the Adam optimizer:
+```python
+import numpy as np
+
+def adam(parameters, gradients):
+    """"""Adam optimizer""""""
+    
+    # Update parameters using Adam algorithm
+    v = 0
+    s = 0
+    t = 1
+    
+    for parameter in parameters:
+        v = beta1 * v + (1 - beta1) * gradient
+        s = beta2 * s + (1 - beta2) * np.square(gradient)
+        
+        denom = np.sqrt(s / t) + epsilon
+        parameter -= learning_rate * v / denom
+        
+    # Update bias parameters using Adam algorithm
+    vb = 0
+    sb = 0
+    tb = 1
+    
+    for bias in biases:
+        vb = beta1 * vb + (1 - beta1) * gradient
+        sb = beta2 * sb + (1 - beta2) * np.square(gradient)
+        
+        denom = np.sqrt(sb / tb) + epsilon
+        bias -= learning_rate * vb / denom
+        
+    return parameters, biases
+```
+In this code, `parameters` and `gradients` are lists of parameter tensors and gradient tensors correspondingly, and `learning_rate`, `beta1`, `beta2`, and `epsilon` are hyperparameters that control the learning rate, moment 1, moment 2, and epsilon respectively.
+
+To use this code, you can call the `adam()` function with a list of parameter tensors and a list of gradient tensors, like this:
+```python
+# Initialize parameters and biases randomly
+parameters = np.random.randn(10)
+biases = np.random.randn(10)
+
+# Compute gradients using backpropagation
+gradients = compute_gradients(parameters, inputs, outputs)
+
+# Update parameters using Adam optimizer
+updated_parameters, updated_biases = adam(parameters, biases, gradients)
+```
+This code will update the parameters and biases in place, so make sure to use separate variables for `parameters` and `biases` if you want to store the updated values.",2025-07-06 12:02:24.620433

@@ -27,3 +27,4 @@ pytube
 numexpr
 cassio
 pypdf2
+gradio
