@@ -35,3 +35,4 @@ pinecone
 pinecone-text
 pinecone-notebooks
 neo4j==5.14
+langgraph
