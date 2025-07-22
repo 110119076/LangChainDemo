@@ -1,6 +1,30 @@
 # LangChainDemo
 Learning LangChain
 
+### 🧠 What’s Inside the Repo
+
+This repository is a comprehensive collection of hands-on projects and experiments from my Generative AI learning journey. Topics covered include:
+
+- **LangChain basics and custom pipelines**
+  
+- **Conversational chatbots using LLMs**
+  
+- **Doc-based QnA with Groq, Llama3, and NVIDIA NIM**
+  
+- **PDF RAG pipelines**
+  
+- **Agentic search engines and code assistants**
+  
+- **Text summarization and MathGPT**
+  
+- **Neo4j GraphDB integration for knowledge graphs**
+  
+- **Hybrid search with Pinecone**
+  
+- **LangGraph-based chatbot workflows**
+
+
+
 ## All about venvs
 
 #### Create venv:
