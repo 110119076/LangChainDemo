@@ -1,7 +1,7 @@
 # LangChainDemo
-Learning LangChain
+Exploring LangChain
 
-### 🧠 What’s Inside the Repo
+### 🧠 What’s Inside this Repo
 
 This repository is a comprehensive collection of hands-on projects and experiments from my Generative AI learning journey. Topics covered include:
 
@@ -22,6 +22,8 @@ This repository is a comprehensive collection of hands-on projects and experimen
 - **Hybrid search with Pinecone**
   
 - **LangGraph-based chatbot workflows**
+
+- **Corrective RAG (CRAG) implementation step by step**
 
 
 
